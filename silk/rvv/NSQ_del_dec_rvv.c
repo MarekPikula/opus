@@ -32,6 +32,7 @@
 #include "config.h"
 #endif
 
+#ifdef HAVE_RVV
 #include "NSQ.h"
 
 void silk_NSQ_del_dec_rvv(
@@ -835,6 +836,4 @@ void silk_nsq_del_dec_scale_states_rvv(
     }
 }
 
-
-
-
+#endif /* HAVE_RVV */

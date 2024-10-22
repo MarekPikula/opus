@@ -168,3 +168,6 @@ silk/float/rvv/inner_product_FLP_rvv.c
 
 SILK_SOURCES_RVV	=	\
 silk/rvv/NSQ_del_dec_rvv.c
+
+SILK_SOURCES_RVV_RTCD = \
+silk/rvv/rvv_silk_map.c

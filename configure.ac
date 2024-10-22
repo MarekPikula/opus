@@ -408,7 +408,7 @@ m4_define([DEFAULT_ARM_DOTPROD_INTR_CFLAGS], ["-march=armv8.2-a+dotprod"])
 # As a heuristic, if host matches arm*eabi* but not arm*hf*, it's probably soft-float.
 m4_define([DEFAULT_ARM_NEON_SOFTFP_INTR_CFLAGS], [-mfpu=neon -mfloat-abi=softfp])
 
-m4_define([DEFINE_RISCV_RVV_INTR_CFLAGS], "-march=rv64gcv")
+m4_define([DEFAULT_RISCV_RVV_INTR_CFLAGS], "-march=rv64gcv")
 
 AS_CASE([$host],
         [arm*hf*], [AS_VAR_SET([RESOLVED_DEFAULT_ARM_NEON_INTR_CFLAGS], "DEFAULT_ARM_NEON_INTR_CFLAGS")],

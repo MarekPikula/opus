@@ -32,6 +32,8 @@ POSSIBILITY OF SUCH DAMAGE.
 #include "config.h"
 #endif
 
+#ifdef HAVE_RVV
+
 #include <riscv_vector.h>
 #include <stddef.h>
 #include "SigProc_FLP.h"
@@ -81,3 +83,5 @@ double silk_inner_product_FLP_rvv(const silk_float * __restrict__ data1,
 
     return (result);
 }
+
+#endif /* HAVE_RVV */
